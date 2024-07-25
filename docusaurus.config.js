@@ -130,13 +130,7 @@ const config = {
                             },
                         ],
                     },
-                ],
-                logo: {
-                    alt: "Powered by Vercel",
-                    src: "https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg",
-                    href: "https://vercel.com/?utm_source=swirl-team&utm_campaign=oss",
-                    height: 35,
-                },
+                ],  
                 copyright: `Made by <a href="https://github.com/MrinmoyHaloi" target="_blank">Mrinmoy Haloi</a>`,
             },
             prism: {
