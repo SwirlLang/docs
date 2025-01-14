@@ -11,7 +11,7 @@ const config = {
         "favicon.png",
 
     // Set the production url of your site here
-    url: "https://swirl-lang.vercel.app",
+    url: "https://swirl-lang.netlify.app",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/",
@@ -19,7 +19,7 @@ const config = {
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: "SwirlLang", // Usually your GitHub org/user name.
-    projectName: "swirl-docs-v2", // Usually your repo name.
+    projectName: "website", // Usually your repo name.
 
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
