@@ -8,7 +8,7 @@ const config = {
     title: "Swirl Docs",
     tagline: "Swirl Programming Language",
     favicon:
-        "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/logo-transparent.png",
+        "favicon.png",
 
     // Set the production url of your site here
     url: "https://swirl-lang.vercel.app",
