@@ -51,6 +51,5 @@ while <expr> {
 ## Stay informed
 
 - [GitHub](https://github.com/SwirlLang)
-- [Discord](https://swirl-lang.vercel.app/discord)
 - [Blog](/blog)
 - [Twitter](https://twitter.com/swirllang)
