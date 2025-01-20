@@ -105,7 +105,7 @@ const config = {
                         items: [
                             {
                                 label: "Download",
-                                href: "https://swirl-lang.vercel.app/download",
+                                href: "https://swirl-lang.netlify.app/download",
                             },
                         ],
                     },
