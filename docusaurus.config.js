@@ -104,10 +104,6 @@ const config = {
                         title: "Info",
                         items: [
                             {
-                                label: "Contact",
-                                href: "https://swirl-lang.vercel.app/contact",
-                            },
-                            {
                                 label: "Download",
                                 href: "https://swirl-lang.vercel.app/download",
                             },
