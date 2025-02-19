@@ -117,10 +117,6 @@ const config = {
                         title: "Community",
                         items: [
                             {
-                                label: "Discord",
-                                href: "https://swirl-lang.vercel.app/discord",
-                            },
-                            {
                                 label: "GitHub",
                                 href: "https://github.com/SwirlLang/swirl",
                             },
