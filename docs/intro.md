@@ -20,7 +20,7 @@ A modern, beginner-friendly language that combines power, performance, and simpl
 
 ### Functions
 
-```swift
+```rust
 fn main(argc: type, argv: type): int {
   ...
 }
