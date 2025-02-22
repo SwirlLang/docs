@@ -48,6 +48,13 @@ while <expr> {
 }
 ```
 
+### Import
+
+```swift
+import "dir/file.sw"; // local file
+import package::module::symbol; // global package
+```
+
 ## Stay informed
 
 - [GitHub](https://github.com/SwirlLang)
