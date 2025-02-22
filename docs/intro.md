@@ -21,13 +21,15 @@ A modern, beginner-friendly language that combines power, performance, and simpl
 ### Functions
 
 ```rust
-fn main(argc: type, argv: type): int {
+fn main(argc: type, argv: type): i32 {
   ...
 }
 ```
 ### Variables
 
 ```swift
+(var | const) <ident> [: <type>] = <expr>;
+
 var a = 2323232323; // type deduction
 const b = "232322211jfj"; // same
 
