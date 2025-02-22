@@ -11,7 +11,9 @@ A modern, beginner-friendly language that combines power, performance, and simpl
 
 ## Features
 
-- 🛡️ statically typed low level language targeted for high performance applications
+- 🛡️ statically typed 
+- 🔢 low level language 
+- 🚀 targeted for high performance applications
 - 🤝 open source
 
 ## Syntax
