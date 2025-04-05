@@ -5,6 +5,11 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@view-transition {
+	navigation: auto;
+}
+
 :root {
     --ifm-color-primary: #5f1fe0;
     --ifm-code-font-size: 95%;

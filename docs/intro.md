@@ -55,8 +55,15 @@ while <expr> {
 ### Import
 
 ```swift
-import "dir/file.sw"; // local file
-import package::module::symbol; // global package
+// local file
+import dir::mod::symbol; 
+
+// global package
+import package::module::symbol; 
+
+import package::module::symbol as stuff;
+
+import package::module::{ sym1, sym2 as other_stuff };
 ```
 
 ## Stay informed
