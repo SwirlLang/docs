@@ -122,12 +122,15 @@ const config = {
                             },
                         ],
                     },
-                ],  
+                ],
                 copyright: `Made by <a href="https://github.com/MrinmoyHaloi" target="_blank">Mrinmoy Haloi</a>`,
             },
             prism: {
                 theme: prismThemes.github,
                 darkTheme: prismThemes.dracula,
+                additionalLanguages: [
+                    "bash"
+                ]
             },
         }),
 };
