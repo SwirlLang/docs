@@ -1,0 +1,68 @@
+---
+title: Installing Swirl
+id: installation
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Best way to get Swirl currently is to build it from source.
+
+## Building from source
+To build Swirl from source, you need the following prerequisites:
+- Git
+- C++ compiler (e.g., `g++` or `clang++`)
+- CMake (version 3.20 or higher)
+- LLVM Development libraries (version 17 or higher)
+
+### Prerequisites
+
+<Tabs groupId="os">
+<TabItem value="Ubuntu" label="Ubuntu">
+Update packages:
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+Install the required packages:
+```bash
+sudo apt install git cmake clang llvm-dev
+```
+</TabItem>
+
+<TabItem value="fedora" label="Fedora">
+Update packages:
+```bash
+sudo dnf update -y
+```
+Install the required packages:
+```bash
+sudo dnf install git cmake clang llvm-devel
+```
+</TabItem>
+</Tabs>
+
+### Building
+Clone the repository and navigate into it:
+```bash
+git clone https://github.com/swirllang/swirl.git
+```
+```bash
+cd swirl
+```
+
+Generate the build files:
+```bash
+cmake -B build -S .
+```
+
+Build the project:
+```bash
+cmake --build build --config Release
+```
+The Swirl binary will be located in the `build` directory.
+
+### Running
+To run Swirl, you can use the following command:
+```bash
+./build/swirl
+```
