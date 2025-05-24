@@ -1,12 +1,11 @@
 ---
-title: Installing Swirl
 id: installation
 ---
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-# Swirl Installation Guide
+# Installation
 
 Best way to get Swirl currently is to build it from source.
 
@@ -49,6 +48,40 @@ sudo pacman -Syu
 Install the required packages:
 ```bash
 sudo pacman -S git cmake clang llvm
+```
+</TabItem>
+</Tabs>
+
+## MacOS
+Install the required packages:
+```bash
+brew install git cmake llvm
+```
+
+After installing LLVM you need to add LLVM binaries and libraries to your PATH.
+<Tabs groupId="macos">
+<TabItem value="zsh" label="Zsh">
+```bash
+echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc && \
+echo 'export LLVM_DIR="/usr/local/opt/llvm/lib/cmake/llvm"' >> ~/.zshrc
+```
+```bash
+source ~/.zshrc
+```
+</TabItem>
+<TabItem value="bash" label="Bash">
+```bash
+echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.bashrc && \
+echo 'export LLVM_DIR="/usr/local/opt/llvm/lib/cmake/llvm"' >> ~/.bashrc
+```
+```bash
+source ~/.bashrc
+```
+</TabItem>
+<TabItem value="fish" label="Fish">
+```bash
+fish_add_path /usr/local/opt/llvm/bin &&
+set -Ux LLVM_DIR /usr/local/opt/llvm/lib/cmake/llvm
 ```
 </TabItem>
 </Tabs>
