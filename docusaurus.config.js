@@ -61,7 +61,7 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            image: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/logo.png",
+            image: "https://raw.githubusercontent.com/SwirlLang/branding/main/logos/wordmark-logo.png",
             colorMode: {
                 defaultMode: "dark",
             },
