@@ -3,6 +3,7 @@ title: Introduction
 id: intro
 sidebar_position: 1
 slug: /
+description: Introduction to Swirl
 ---
 
 ## Overview
