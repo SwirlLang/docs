@@ -89,7 +89,30 @@ set -Ux LLVM_DIR /usr/local/opt/llvm/lib/cmake/llvm
 </Tabs>
 
 ## Windows
-To build Swirl on Windows, you can use the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install) and follow the [Linux](#linux) instructions above.
+
+- First download MSYS from [msys2.org](https://www.msys2.org/).
+
+- Open the CLANG64 shell.
+
+- Update packages:
+    ```bash
+    pacman -Syu
+    ```
+
+- Install the required packages:
+    ```bash
+    pacman -S mingw-w64-clang-x86_64-cmake, mingw-w64-clang-x86_64-toolchain
+    ```
+        - It will install cmake, clang, llvm dev libs, git, make etc.
+
+- Set up the environment variables:
+    Add the following line to your path environment variable in windows settings
+    ```
+    C:\msys64\clang64\bin
+    ```
+    [Here's](https://www.computerhope.com/issues/ch000549.htm#windows11) a guide for that.
+
+You're system should now be set up to build Swirl.
 
 ## Building
 Clone the repository and navigate into it:
