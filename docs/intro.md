@@ -29,10 +29,10 @@ fn main(argc: type, argv: type): i32 {
 ### Variables
 
 ```swift
-(var | const) <ident> [: <type>] = <expr>;
+<var | let> <ident> [: <type>] [= <expr>];
 
 var a = 2323232323; // type deduction
-const b = "232322211jfj"; // same
+let b = "232322211jfj"; // same
 
 var c: i64 = 2323232121432323;  // explicit
 ```
