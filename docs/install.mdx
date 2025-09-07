@@ -64,8 +64,8 @@ After installing LLVM you need to add LLVM binaries and libraries to your PATH.
 <Tabs groupId="macos">
 <TabItem value="zsh" label="Zsh">
 ```bash
-echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.zshrc && \
-echo 'export LLVM_DIR="/usr/local/opt/llvm/lib/cmake/llvm"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix llvm)/bin:$PATH"' >> ~/.zshrc && \
+echo 'export LLVM_DIR="$(brew --prefix llvm)/lib/cmake/llvm"' >> ~/.zshrc
 ```
 ```bash
 source ~/.zshrc
@@ -73,8 +73,8 @@ source ~/.zshrc
 </TabItem>
 <TabItem value="bash" label="Bash">
 ```bash
-echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.bashrc && \
-echo 'export LLVM_DIR="/usr/local/opt/llvm/lib/cmake/llvm"' >> ~/.bashrc
+echo 'export PATH="$(brew --prefix llvm)/bin:$PATH"' >> ~/.bashrc && \
+echo 'export LLVM_DIR="$(brew --prefix llvm)/lib/cmake/llvm"' >> ~/.bashrc
 ```
 ```bash
 source ~/.bashrc
@@ -82,8 +82,8 @@ source ~/.bashrc
 </TabItem>
 <TabItem value="fish" label="Fish">
 ```bash
-fish_add_path /usr/local/opt/llvm/bin &&
-set -Ux LLVM_DIR /usr/local/opt/llvm/lib/cmake/llvm
+fish_add_path $(brew --prefix llvm)/bin &&
+set -Ux LLVM_DIR $(brew --prefix llvm)/lib/cmake/llvm
 ```
 </TabItem>
 </Tabs>
