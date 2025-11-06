@@ -8,82 +8,47 @@ import TabItem from "@theme/TabItem";
 
 # Installation
 
-Best way to get Swirl currently is to build it from source.
+Right now, the best way to get Swirl is to build it from source. 
 
 ## Prerequisites
 
-To build Swirl from source, you need the following prerequisites:
+Before you start, make sure you have the following tools installed:
 - Git
-- C++ compiler (e.g., `g++` or `clang++`)
-    - Make sure it supports C++23
-- CMake (version 3.20 or higher)
-- LLVM Development libraries (version 17 or higher)
+- C++ compiler with C++23 support (e.g., `g++` or `clang++` or `msvc`)
+- CMake (version 3.20 or newer)
+- LLVM Development libraries (version 17 or newer)
 
 ## Linux
 <Tabs groupId="os">
 <TabItem value="Ubuntu" label="Ubuntu">
-Update packages:
+First, update your packages:
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
-Install the required packages:
+Then, install the required packages:
 ```bash
-sudo apt install git cmake clang llvm-dev
+sudo apt install git cmake clang llvm-dev liblld-dev
 ```
 </TabItem>
 
 <TabItem value="fedora" label="Fedora">
-Update packages:
+First, update your packages:
 ```bash
 sudo dnf update -y
 ```
-Install the required packages:
+Then, install the required packages:
 ```bash
-sudo dnf install git cmake clang llvm-devel
+sudo dnf install git cmake clang llvm-devel lld-devel
 ```
 </TabItem>
 <TabItem value="arch" label="Arch Linux">
-Update packages:
+First, update your packages:
 ```bash
 sudo pacman -Syu
 ```
-Install the required packages:
+Then, install the required packages:
 ```bash
-sudo pacman -S git cmake clang llvm
-```
-</TabItem>
-</Tabs>
-
-## MacOS
-Install the required packages:
-```bash
-brew install git cmake llvm
-```
-
-After installing LLVM you need to add LLVM binaries and libraries to your PATH.
-<Tabs groupId="macos">
-<TabItem value="zsh" label="Zsh">
-```bash
-echo 'export PATH="$(brew --prefix llvm)/bin:$PATH"' >> ~/.zshrc && \
-echo 'export LLVM_DIR="$(brew --prefix llvm)/lib/cmake/llvm"' >> ~/.zshrc
-```
-```bash
-source ~/.zshrc
-```
-</TabItem>
-<TabItem value="bash" label="Bash">
-```bash
-echo 'export PATH="$(brew --prefix llvm)/bin:$PATH"' >> ~/.bashrc && \
-echo 'export LLVM_DIR="$(brew --prefix llvm)/lib/cmake/llvm"' >> ~/.bashrc
-```
-```bash
-source ~/.bashrc
-```
-</TabItem>
-<TabItem value="fish" label="Fish">
-```bash
-fish_add_path $(brew --prefix llvm)/bin &&
-set -Ux LLVM_DIR $(brew --prefix llvm)/lib/cmake/llvm
+sudo pacman -S git cmake clang llvm lld
 ```
 </TabItem>
 </Tabs>
@@ -115,7 +80,7 @@ set -Ux LLVM_DIR $(brew --prefix llvm)/lib/cmake/llvm
 Your system should now be set up to build Swirl.
 
 ## Building
-Clone the repository and navigate into it:
+First clone the repository and navigate into it:
 ```bash
 git clone https://github.com/swirllang/swirl.git
 ```
@@ -132,7 +97,7 @@ Build the project:
 ```bash
 cmake --build build --config Release
 ```
-The Swirl binary will be located in the `build` directory.
+The Swirl binary will be in the `build` directory.
 
 ## Running
 To run Swirl, you can use the following command:
