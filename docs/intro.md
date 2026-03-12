@@ -7,81 +7,31 @@ description: Introduction to Swirl
 ---
 
 ## Overview
+Swirl is an open-source, low-level, statically typed programming language.
 
-A modern, beginner-friendly language that combines power, performance, and simplicity.
-
-## Features
-
-- 🛡️ statically typed 
-- 🔢 low level language 
-- 🚀 targeted for high performance applications
-- 🤝 open source
-
-## Syntax
-
-### Functions
-
+## Kickstart
+The `main` function is the entry-point of a Swirl program.
 ```rust
-fn main(argc: type, argv: type): i32 {
-  ...
+fn main(): i32 {
+    let a: i32 = 43;  // declarations with `let` can't be reassigned
+    
+    var b: i32 = 54;
+    b = 8; // declarations with `var` CAN be reassigned
+
+    // You need not specify the type in the declaration at all, the compiler can infer it. See the page about Types to learn more.
+    let c = 43;
+
+    return a * b;
 }
 ```
-### Variables
-
-```swift
-<var | let> <ident> [: <type>] [= <expr>];
-
-var a = 2323232323; // type deduction
-let b = "232322211jfj"; // same
-
-var c: i64 = 2323232121432323;  // explicit
-```
-
-### Conditionals
-
-```swift
-if <expr> {
-    ... 
-} else { ... }
-```
-
-### Loops
-
-```swift
-while <expr> {
-   ...
+If command-line arguments are of relevance, one can add a parameter to `main` and utilize them:
+```rust
+fn main(args: &[str]) {
+    ...
+    return 0;
 }
 ```
-
-### Import
-
-```swift
-// local file
-import dir::mod::symbol; 
-
-// global package
-import package::module::symbol; 
-
-import package::module::symbol as stuff;
-
-import package::module::{ sym1, sym2 as other_stuff };
-```
-
-### Arrays
-
-```swift
-var a: [i32 | 5];  // explicit size mention is required when not initialized
-var c = [43, 56, 622, 56];  // deduced to [i32 | 4]
-var d = u32[3, 34, 52, 42];  // deduced to [u32 | 4]
-```
-
-Arrays are first-class primitives, this applies to their value-semantics as well:
-```swift
-fn function() {
-    var b = [23, 34, 63];
-    return b;  // this will be passed by value, it won't simply decay into a pointer
-}
-```
+Note that the name of the parameter is not relevant, but the [type]() is. 
 
 ## Stay informed
 
