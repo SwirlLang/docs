@@ -18,7 +18,8 @@ fn main(): i32 {
     var b: i32 = 54;
     b = 8; // declarations with `var` CAN be reassigned
 
-    // You need not specify the type in the declaration at all, the compiler can infer it. See the page about Types to learn more.
+    // You need not specify the type in the declaration at all, the compiler can infer it. 
+    // See the page about Types to learn more.
     let c = 43;
 
     return a * b;
