@@ -36,7 +36,7 @@ Swirl provides the following syntax to create an in-place array for a type:
 // `T` is the type and `N` is the number of elements.
 let arr: [T | N] = [x, y, z, ...];
 ```
-You do not need to declare the type explicitly if you provide an initializer, the compiler can [infer]() the array-type:
+You do not need to declare the type explicitly if you provide an initializer, the compiler can [infer](#type-inference) the array-type:
  ```rust
 let arr = [1, 2, 3, 4];  // automatically inferred to [i32 | 4]
  ```

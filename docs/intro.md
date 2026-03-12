@@ -31,7 +31,7 @@ fn main(args: &[str]) {
     return 0;
 }
 ```
-Note that the name of the parameter is not relevant, but the [type]() is. 
+Note that the name of the parameter is not relevant, but the [type](types.md) is. 
 
 ## Stay informed
 
