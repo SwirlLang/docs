@@ -1,7 +1,6 @@
 ---
 title: Types
 id: types
-sidebar_position: 1
 slug: /types
 description: Typesystem of Swirl
 ---
