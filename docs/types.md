@@ -32,12 +32,12 @@ Swirl is statically and strongly-typed. Its first-class types are:
 
 ## Array Type
 Swirl provides the following syntax to create an in-place array for a type: 
-```rust
+```swirl
 // `T` is the type and `N` is the number of elements.
 let arr: [T | N] = [x, y, z, ...];
 ```
 You do not need to declare the type explicitly if you provide an initializer, the compiler can [infer](type-inference.md) the array-type:
- ```rust
+ ```swirl
 let arr = [1, 2, 3, 4];  // automatically inferred to [i32 | 4]
  ```
 
@@ -49,7 +49,7 @@ A reference-object redirects operations performed on it to the object it's bound
 
 ## Struct Types
 The following example demonstrates how struct types are defined:
-```rust
+```swirl
 struct MyStruct {
     let a: i32;
     let b: i64;
@@ -74,7 +74,26 @@ fn main() {
     member = instance.get_a();  // a reference to `instance` is passed implicitly
 }
 ```
+## Enum Types
+Enums are scoped types used to group a series of named integral constants. 
+```swirl
+enum MyEnum {
+    ONE,
+    TWO,
+    THREE,
+    FOUR
+}
 
+fn main() {
+    var one: MyEnum = MyEnum::ONE;
+}
+```
+The default underlying type is `i32`, one can change it (to another _integral_ type) by doing:
+```swirl
+enum MyEnum : i8 { 
+    ... 
+}
+```
 ## C-Types
 The following types exist to allow easier C-interop:
 
