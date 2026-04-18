@@ -7,7 +7,7 @@ description: Introduction to Swirl
 ---
 
 ## Overview
-Swirl is an open-source, low-level, statically typed programming language.
+Swirl is an LLVM-based systems programming language for learning and experimentation.
 
 ## Kickstart
 The `main` function is the entry-point of a Swirl program.
