@@ -96,7 +96,7 @@ const config = {
                         title: "Swirl",
                         items: [
                             {
-                                html: "A modern, beginner-friendly language that combines power, performance, and simplicity.",
+                                html: "An LLVM-based systems programming language for learning and experimentation.",
                             },
                         ],
                     },
