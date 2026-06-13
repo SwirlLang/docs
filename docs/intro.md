@@ -7,7 +7,7 @@ description: Introduction to Swirl
 ---
 
 ## Overview
-Swirl is an LLVM-based systems programming language for learning and experimentation.
+Swirl is a statically-typed, LLVM-based systems programming language.
 
 ## Kickstart
 The `main` function is the entry-point of a Swirl program.
@@ -60,7 +60,49 @@ while e != f {
 }
 ```
 
-Note that the name of the parameter is not relevant, but the [type](types.md) is.
+## Operators
+| Operator | Usage                     | Associativity | Precedence (Descending order) |
+|----------|---------------------------|---------------|-------------------------------|
+| `.`      | Member access             | Left          | A                             |
+| `[]`     | Indexing                  | Left          | B                             |
+| `&x`     | Address taking            | Left          | C                             |
+| `+x`     | Unary plus                | Left          | C                             |
+| `-x`     | Unary minus               | Left          | C                             |
+| `*x`     | Dereference               | Left          | C                             |
+| `!x`     | Logical not               | Left          | C                             | 
+| `~x`     | Bitwise NOT               | Left          | C                             |
+| `as`     | Cast                      | Left          | D                             |
+| `**`     | Exponentiation            | Right         | E                             |
+| `*`      | Multiplication            | Left          | F                             |
+| `/`      | Division                  | Left          | F                             |
+| `%`      | Modulus                   | Left          | F                             |
+| `+`      | Addition                  | Left          | G                             |
+| `-`      | Subtraction               | Left          | G                             |
+| `<<`     | Bitwise left shift        | Left          | H                             |
+| `>>`     | Bitwise right shift       | Left          | H                             |
+| `>`      | Greater than              | Left          | I                             |
+| `>=`     | Greater than or equal     | Left          | I                             |
+| `<`      | Less than                 | Left          | I                             |
+| `<=`     | Less than or equal        | Left          | I                             |
+| `==`     | Equality                  | Left          | J                             |
+| `!=`     | Inequality                | Left          | J                             |
+| `&`      | Bitwise AND               | Left          | K                             |
+| `^`      | Bitwise XOR               | Left          | L                             |
+| `\|`     | Bitwise OR                | Left          | M                             |
+| `&&`     | Logical AND               | Left          | N                             |
+| `\|\|`   | Logical OR                | Left          | O                             |
+| `=`      | Assignment                | Right         | P                             |
+| `+=`     | Add assignment            | Right         | P                             |
+| `-=`     | Subtract assignment       | Right         | P                             |
+| `*=`     | Multiply assignment       | Right         | P                             |
+| `/=`     | Divide assignment         | Right         | P                             |
+| `%=`     | Modulus assignment        | Right         | P                             |
+| `**=`    | Exponentiation assignment | Right         | P                             |
+| `\|=`    | Bitwise OR assignment     | Right         | P                             |
+| `&=`     | Bitwise AND assignment    | Right         | P                             |
+| `^=`     | Bitwise XOR assignment    | Right         | P                             |
+| `<<=`    | Left shift assignment     | Right         | P                             |
+| `>>=`    | Right shift assignment    | Right         | P                             |
 
 ## Stay informed
 
