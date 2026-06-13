@@ -47,6 +47,10 @@ Slices provide a "view" for a sequence of elements, internally, a slice is akin 
 ## Reference Type
 A reference-object redirects operations performed on it to the object it's bound to. A reference cannot be reassigned once it has been created. A reference type is syntactically represented as `&T` (for immutable references) or `&mut T` (for mutable references).
 
+## Pointers
+A pointer type is syntactically written as `*T`, lvalues of such type are dereferenced by the unary `*ptr` operator.
+LValue pointers are fetched via the unary `&` operator (e.g. `&stuff`).
+
 ## Struct Types
 The following example demonstrates how struct types are defined:
 ```swirl
@@ -94,33 +98,6 @@ enum MyEnum : i8 {
     ... 
 }
 ```
-## C-Types
-The following types exist to allow easier C-interop:
-
-| Type          | C counterpart        |
-|---------------|----------------------|
-| `c_int`       | `int`                |
-| `c_uint`      | `unsigned int`       |
-| `c_ll`        | `long long`          |
-| `c_ull`       | `unsigned long long` |
-| `c_l`         | `long`               |
-| `c_ul`        | `unsigned long`      |
-| `c_size_t`    | `size_t`             |
-| `c_ssize_t`   | `ssize_t`            |
-| `c_schar`     | `signed char`        |
-| `c_uchar`     | `unsigned char`      |
-| `c_short`     | `short`              |
-| `c_ushort`    | `unsigned short`     |
-| `c_bool`      | `_Bool`              |
-| `c_float`     | `float`              |
-| `c_double`    | `double`             |
-| `c_ldouble`   | `long double`        |
-| `c_intptr_t`  | `intptr_t`           |
-| `c_uintptr_t` | `uintptr_t`          |
-| `c_ptrdiff_t` | `ptrdiff_t`          |
-| `c_intmax_t`  | `intmax_t`           |
-| `c_uintmax_t` | `uintmax_t`          |
-| `c_wchar_t`   | `wchar_t`            |
 ## Stay informed
 
 - [GitHub](https://github.com/SwirlLang)
