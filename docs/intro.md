@@ -13,25 +13,50 @@ Swirl is an LLVM-based systems programming language for learning and experimenta
 The `main` function is the entry-point of a Swirl program.
 
 ```swirl
-fn main(): i32 {
-    let a: i32 = 43;  // declarations with `let` can't be reassigned
-
-    var b: i32 = 54;
-    b = 8; // declarations with `var` CAN be reassigned
-
-    // You need not specify the type in the declaration at all, the compiler can infer it.
-    // See the page about Types to learn more.
-    let c = 43;
-
-    return a * b;
+fn main(): i32 {  // the return type can be omitted as the type inference system can infer it
+    return 0;
 }
 ```
-If command-line arguments are of relevance, one can add a parameter to `main` and utilize them:
+
+## Variable Declarations
+Variables can either be declared with `let` or `var`, the former doesn't allow reassignment and enforces
+in-place initialization, the latter does allow it.
 
 ```swirl
-fn main(args: &[str]) {
+let constant = 43;
+let anothere_const: i8;  // error: initialization required
+    
+var my_var = 39;
+my_var = 49;  // can be reassigned
+```
+**Initialization Semantics:** when a variable declaration is left uninitialized, it is automatically zero-initialized.
+If you do not want that to happen, initialize it with the `undefined` keyword.
+```swirl
+var uninitialized: i16 = undefined;
+```
+## Conditions
+```swirl
+if a == b || c == d && e != f {
     ...
-    return 0;
+}
+
+elif a == c {
+    ...
+}
+
+else {
+    ...
+}
+```
+
+## While Loop
+```swirl
+while e != f {
+    if e == g {
+        break;
+    } else {
+        continue;
+    }
 }
 ```
 
