@@ -1,7 +1,6 @@
 ---
 title: Compile time evaluation
 id: comptime
-sidebar_position: 1
 slug: /comptime
 description: Introduction to compile time evaluation
 ---
