@@ -77,16 +77,13 @@
 			}
 		],
 		'keyword': [
-			/\b(?:as|async|await|break|const|continue|else|extern|final|fn|for|if|in|let|var|override|return|self|static|struct|try|while)\b/,
+			/\b(?:as|async|await|break|const|continue|else|extern|final|fn|for|if|elif|comptime|enum|in|let|var|override|return|self|static|struct|try|while)\b/,
 			/\b(?:bool|char|f(?:32|64)|[ui](?:8|16|32|64|128|size)|str)\b/
 		],
 
 
 		'function': /\b[a-z_]\w*(?=\s*(?:::\s*<|\())/,
-		'macro': {
-			pattern: /\b\w+!/,
-			alias: 'property'
-		},
+		'enum': /\b[a-z_]\w*(?=\s*::\s*\w)/,
 		'constant': /\b[A-Z_][A-Z_\d]+\b/,
 		'class-name': /\b[A-Z]\w*\b/,
 
