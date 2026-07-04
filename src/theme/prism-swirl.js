@@ -77,7 +77,7 @@
 			}
 		],
 		'keyword': [
-			/\b(?:as|async|await|break|const|continue|else|extern|final|fn|for|if|elif|comptime|enum|in|let|var|override|return|self|static|struct|try|while)\b/,
+			/\b(?:as|async|await|break|const|continue|else|extern|export|fn|for|if|elif|comptime|enum|in|let|var|return|self|static|struct|try|while)\b/,
 			/\b(?:bool|char|f(?:32|64)|[ui](?:8|16|32|64|128|size)|str)\b/
 		],
 

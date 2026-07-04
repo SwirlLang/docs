@@ -62,7 +62,7 @@ struct MyStruct {
     fn get_b(&self) { return self.b; }
     
     // static methods simply do not have `&self` (or `&mut self`) as the first parameter
-    fn construct(v1: i32, v2: i64) {
+    export fn construct(v1: i32, v2: i64) {
         var tmp: MyStruct;
         tmp.a = v1;
         tmp.b = v2;
