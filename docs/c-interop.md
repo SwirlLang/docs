@@ -12,6 +12,14 @@ extern "C" fn my_ffi(...): type;
 ```
 This prevents name mangling and forces the C Calling Convention.
 
+Multiple declarations can be put inside a extern block.
+```swirl
+extern "C" {
+    fn my_ffi1(...): type;
+    fn my_ffi2(...): type;
+}
+```
+
 Types like `char` are directly compatible with the C counterpart. The following C types are provided for writing FFIs:
 
 | Type          | C counterpart        |
