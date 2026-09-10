@@ -37,7 +37,7 @@ context to disambiguate generic arg lists from expressions (where they conflict
 with the `<` and `>` operator), in type-context, the `!` can be omitted as shown above.
 
 ## Comptime values as generic args
-Swirl allows you to pass `comptime` expressions as generic arguments, to do so,
+Swirl allows you to pass [comptime expressions](/comptime) as generic arguments, to do so,
 simply precede the `comptime` expression with the `comptime` keyword as shown below.
 ```swirl
 fn return_number<N>() { return N; }
@@ -47,7 +47,7 @@ fn main() {
 }
 ```
 ## Generic Constraints
-Generics parameters can be constrained by one or multiple protocols:
+Generics parameters can be constrained by one or multiple [protocols](/protocols):
 ```swirl
 fn one_protocol_constraint<T: P>() {
     ...
@@ -59,7 +59,7 @@ fn multiple_protocol_constraints<T: [P, Q, R]> {
 }
 ```
 where `P`, `Q` and `R` are protocols. The compiler enforces the argument of `T` in
-both cases to implement all the prescribed protocols.
+both cases to implement all the prescribed [protocols](/protocols).
 
 
 ## Stay informed
