@@ -98,6 +98,12 @@ enum MyEnum : i8 {
     ... 
 }
 ```
+## Type Aliases
+You can define a type alias like:
+```swirl
+type i32_alias = i32;
+```
+
 ## Stay informed
 
 - [GitHub](https://github.com/SwirlLang)
