@@ -28,6 +28,19 @@ impl Writable for T {
 Note that you are not just limited to structs, you can also implement protocols for
 all builtin (`i32`, `str`, etc.) or compound types (pointers, arrays, etc.).
 
+## Associate Types
+Protocols can have associate types as constraints, which are type aliases which the
+implementer must define as a concrete type. E.g.
+```swirl
+protocol Iterable {
+    type element_type;
+}
+
+impl Iterable for [i32 | 5] {
+    type element_type = i32;
+}
+```
+
 ## Protocol Composition
 You can compose protocols together to make a new one - 
 ```swirl
